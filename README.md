@@ -1,8 +1,4 @@
-# БTorrent (bTorrent)
-
-![logo](docs/logo.jpg)
-
-This is my fully functional [BitTorrent](https://en.wikipedia.org/wiki/BitTorrent) client written over a weekend from scratch in Python.
+# TermiTorrent (TermiTorrent)
 
 ### How to run?
 
@@ -37,22 +33,6 @@ To download a file via the BitTorrent protocol, one must roughly follow these st
 4. After a few more exchanges, you should know which parts of the file every peer has and which parts they don't
 5. Start asking for pieces of the file you don't have, and keep asking until you collect the entire file
 6. Write each collected piece of the file to its correct position (if there are multiple files then you should break the downloaded chunk up into their respective lengths)
-7. You are done, you can now either seed the file or sever all communication
+7. You can now either seed the file or sever all communication
 
-Sounds kind of complicated, right?
-
-### Footnotes
-
-`БTorrent`, where `Б` is the Russian `B` and it stands for ... well, Boris. If you run the client, you will notice that the client_id is also `-Bs0001-` 😉 
-
-This client was written entirely from scratch in Python3 by Boris Skurikhin (for learning purposes, *not production*).
-However, this could not be possible without:
-- [Twisted](https://twistedmatrix.com/trac/)
-- [bCoding](https://pypi.org/project/bcoding/1.4/)
-
-### User Interface (v1.0)
-
-This is what the UI looks like right now - downloading Debian:
-
-![User Interface](docs/UI.png)
 
